@@ -6,6 +6,7 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://perteneo.com',
+  base: '/',
   integrations: [
     tailwind({
       applyBaseStyles: true
@@ -13,7 +14,13 @@ export default defineConfig({
     react()
   ],
   build: {
-    inlineStylesheets: 'auto'
+    inlineStylesheets: 'always',
+    assets: '_astro'
+  },
+  vite: {
+    build: {
+      assetsInlineLimit: 0
+    }
   },
   compressHTML: true
 });
