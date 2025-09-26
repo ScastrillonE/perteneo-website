@@ -1,0 +1,142 @@
+---
+// Hero Section Component
+---
+
+<section class="relative min-h-screen gradient-navy overflow-hidden">
+  <!-- Background Elements -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gold rounded-full blur-3xl"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-coral rounded-full blur-3xl"></div>
+  </div>
+  
+  <!-- Navigation -->
+  <nav class="relative z-20 container mx-auto px-6 py-6">
+    <div class="flex items-center justify-between">
+      <a href="/" class="text-2xl font-bold text-white hover:opacity-80 transition-opacity">
+        <span class="text-gold">Pert</span>eneo
+      </a>
+      <div class="hidden md:flex space-x-8">
+        <a href="#como-funciona" class="text-white hover:text-gold transition-colors">Cómo Funciona</a>
+        <a href="#beneficios" class="text-white hover:text-gold transition-colors">Beneficios</a>
+        <a href="#precios" class="text-white hover:text-gold transition-colors">Precios</a>
+        <a href="#preguntas" class="text-white hover:text-gold transition-colors">Preguntas</a>
+      </div>
+      <button class="btn-secondary text-sm px-6 py-3">Solicitar Demo</button>
+    </div>
+  </nav>
+
+  <!-- Hero Content -->
+  <div class="relative z-10 container mx-auto px-6 pt-20 pb-32">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Left Column - Content -->
+      <div class="text-center lg:text-left">
+        <h1 class="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-up">
+          Construye fidelidad con 
+          <span class="text-gold">tarjetas digitales</span> 
+          que tus clientes siempre llevarán
+        </h1>
+        
+        <p class="text-xl text-gray-200 mb-8 max-w-2xl animate-fade-up delay-200">
+          Perteneo transforma visitantes ocasionales en clientes fieles con tarjetas de fidelidad digitales que viven en Google Wallet y Apple Wallet. Fácil de configurar, imposible de perder.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-up delay-300">
+          <a href="#contacto" class="btn-primary inline-flex items-center justify-center">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+            </svg>
+            Solicitar Demo
+          </a>
+          <a href="#como-funciona" class="btn-secondary inline-flex items-center justify-center">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M12 5v.01M12 19v.01M12 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            Ver Cómo Funciona
+          </a>
+        </div>
+
+        <!-- Social Proof -->
+        <div class="mt-16 animate-fade-up delay-400">
+          <p class="text-gray-300 text-sm mb-4">Confiado por más de 500 restaurantes y comercios</p>
+          <div class="flex items-center justify-center lg:justify-start space-x-8 opacity-60">
+            <div class="text-white font-medium">Juan Valdez</div>
+            <div class="text-white font-medium">Café Local</div>
+            <div class="text-white font-medium">Pizza Express</div>
+            <div class="text-white font-medium">Almacén Plus</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column - Visual -->
+      <div class="relative animate-fade-up delay-500">
+        <!-- Main Device Mockup -->
+        <div class="relative max-w-sm mx-auto">
+          <!-- Phone Frame -->
+          <div class="relative z-10 bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-1 shadow-2xl">
+            <div class="bg-black rounded-3xl p-4">
+              <!-- Phone Screen -->
+              <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                <img 
+                  src="/mockup-phone.png"
+                  alt="Billetera digital mostrando múltiples tarjetas de fidelidad de restaurantes"
+                  class="w-full h-96 object-cover"
+                />
+                <!-- Wallet Card Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t from-deep-navy via-transparent to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                  <div class="bg-deep-navy bg-opacity-90 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                      <h3 class="font-bold">Aroma Café</h3>
+                      <span class="text-gold">★★★★☆</span>
+                    </div>
+                    <div class="text-sm opacity-80 mb-3">Tarjeta de Fidelidad • 8/10 sellos</div>
+                    <div class="flex space-x-1">
+                      <!-- Stamp indicators -->
+                      <div class="w-6 h-6 bg-gold rounded-full flex items-center justify-center text-xs">✓</div>
+                      <div class="w-6 h-6 bg-gold rounded-full flex items-center justify-center text-xs">✓</div>
+                      <div class="w-6 h-6 bg-gold rounded-full flex items-center justify-center text-xs">✓</div>
+                      <div class="w-6 h-6 bg-gold rounded-full flex items-center justify-center text-xs">✓</div>
+                      <div class="w-6 h-6 bg-gold rounded-full flex items-center justify-center text-xs">✓</div>
+                      <div class="w-6 h-6 bg-gold rounded-full flex items-center justify-center text-xs">✓</div>
+                      <div class="w-6 h-6 bg-gold rounded-full flex items-center justify-center text-xs">✓</div>
+                      <div class="w-6 h-6 bg-gold rounded-full flex items-center justify-center text-xs">✓</div>
+                      <div class="w-6 h-6 bg-gray-300 rounded-full"></div>
+                      <div class="w-6 h-6 bg-gray-300 rounded-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating QR Code -->
+          <div class="absolute -top-8 -right-8 z-20 animate-float">
+            <div class="bg-white rounded-xl p-4 shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1595079676339-1534801ad6cf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwxfHxRUiUyMGNvZGV8ZW58MHx8fHwxNzU3NzQyNTMyfDA&ixlib=rb-4.1.0&q=85"
+                alt="Código QR para tarjeta de fidelidad"
+                class="w-16 h-16 object-cover rounded"
+              />
+              <p class="text-xs text-center mt-2 text-deep-navy">Obtén tu tarjeta</p>
+            </div>
+          </div>
+
+          <!-- Floating Notification -->
+          <div class="absolute -bottom-4 -left-8 z-20 animate-pulse">
+            <div class="bg-coral rounded-lg p-3 shadow-lg text-white text-sm max-w-xs">
+              <div class="font-medium">☕ ¡Tu recompensa está lista!</div>
+              <div class="text-xs opacity-90">Reclama tu café gratis en Aroma Café</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Wave -->
+  <div class="absolute bottom-0 left-0 right-0">
+    <svg class="w-full h-20 text-white" fill="currentColor" viewBox="0 0 1440 120">
+      <path d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,144C960,149,1056,139,1152,128C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+  </div>
+</section>
